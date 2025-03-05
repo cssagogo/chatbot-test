@@ -4,19 +4,21 @@ body {
     font-style: normal;
 }
 
-.st-emotion-cache-1cvow4s,
-.st-emotion-cache-1cvow4s h1, 
-.st-emotion-cache-1cvow4s h2, 
-.st-emotion-cache-1cvow4s h3, 
-.st-emotion-cache-1cvow4s h4, 
-.st-emotion-cache-1cvow4s h5, 
-.st-emotion-cache-1cvow4s h6 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+[class^='st-emotion-cache-'], [class*=' st-emotion-cache-'],
+[class^='st-emotion-cache-'] h1, [class*=' st-emotion-cache-'] h1,
+[class^='st-emotion-cache-'] h2, [class*=' st-emotion-cache-'] h2,
+[class^='st-emotion-cache-'] h3, [class*=' st-emotion-cache-'] h3,
+[class^='st-emotion-cache-'] h4, [class*=' st-emotion-cache-'] h4,
+[class^='st-emotion-cache-'] h5, [class*=' st-emotion-cache-'] h5,
+[class^='st-emotion-cache-'] h6, [class*=' st-emotion-cache-'] h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
+/* 
 .poppins-light {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -58,4 +60,4 @@ body {
     font-weight: 400;
     font-style: italic;
   }
-  
+   */
