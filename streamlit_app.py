@@ -11,12 +11,14 @@ st.logo(image="images/ispot-logo.png",
 # Inject CSS
 st.markdown('<style>' + open('styles.css').read() + '</style>', unsafe_allow_html=True)
 
+
 # Show opening question
-st.title("What would you like to know about your ads?")
-st.write(
-    '<span class="muted">SpotGPT can make mistakes. Please verify important information.</span>', 
-    unsafe_allow_html=True
-)
+if "messages" not in st.session_state:
+    st.title("What would you like to know about your ads?")
+    st.write(
+        '<span class="muted">SpotGPT can make mistakes. Please verify important information.</span>', 
+        unsafe_allow_html=True
+    )
 
 # Ask user for their OpenAI API key via `st.text_input`.
 # Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
