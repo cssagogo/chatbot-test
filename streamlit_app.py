@@ -1,6 +1,12 @@
 import streamlit as st
 from openai import OpenAI
 
+# Set page config
+st.set_page_config(page_title="SpotGPT | iSpot.tv")
+
+st.logo(image="images/ispot-logo.png", 
+        icon_image="images/ispot-logo.png")
+
 st.markdown('''       
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
