@@ -62,9 +62,10 @@ body {
    */
 
 
-
-   [data-testid="manage-app-button"],
-   [data-testid="manage-app-button"],
-   [data-testid="stHeader"] {
+  [data-testid="stHeader"] {
     display: none !important;
-   }
+  }
+
+  button[data-testid="manage-app-button"] {
+    display: none !important;
+  }
