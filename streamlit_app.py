@@ -11,7 +11,6 @@ st.logo(image="images/ispot-logo.png",
 # Inject CSS
 st.markdown('<style>' + open('styles.css').read() + '</style>', unsafe_allow_html=True)
 
-
 # Show opening question
 if "messages" not in st.session_state:
     st.title("What would you like to know about your ads?")
