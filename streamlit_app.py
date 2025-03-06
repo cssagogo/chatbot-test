@@ -6,7 +6,7 @@ st.set_page_config(page_title="SpotGPT | iSpot.tv")
 
 # Add logos
 st.logo(image="images/ispot-logo.png", 
-        icon_image="images/ispot-logo.png")
+        icon_image="images/ispot-logo.png", size="large")
 
 # Inject CSS
 st.markdown('<style>' + open('styles.css').read() + '</style>', unsafe_allow_html=True)
