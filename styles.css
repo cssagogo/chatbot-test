@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
 
 [class^='st-emotion-cache-'], [class*=' st-emotion-cache-'],
 [class^='st-emotion-cache-'] h1, [class*=' st-emotion-cache-'] h1,
@@ -62,10 +63,6 @@ body {
    */
 
 
-  [data-testid="stHeader"] {
-    display: none !important;
-  }
-
-  button[data-testid="manage-app-button"] {
-    display: none !important;
-  }
+.muted {
+  color: #AAAAAA;
+}

@@ -4,20 +4,19 @@ from openai import OpenAI
 # Set page config
 st.set_page_config(page_title="SpotGPT | iSpot.tv")
 
+# Add logos
 st.logo(image="images/ispot-logo.png", 
         icon_image="images/ispot-logo.png")
-
-st.markdown('''       
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
-''', unsafe_allow_html=True)
 
 # Inject CSS
 st.markdown('<style>' + open('styles.css').read() + '</style>', unsafe_allow_html=True)
 
 # Show opening question
 st.title("What would you like to know about your ads?")
+st.write(
+    '<span class="muted">SpotGPT can make mistakes. Please verify important information.</span>', 
+    unsafe_allow_html=True
+)
 
 # Ask user for their OpenAI API key via `st.text_input`.
 # Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
@@ -40,10 +39,6 @@ for message in st.session_state.messages:
 # Create a chat input field to allow the user to enter a message. This will display
 # automatically at the bottom of the page.
 if prompt := st.chat_input("Ask SpotGPT a question about this ad collection."):
-
-    st.write(
-        "SpotGPT can make mistakes. Please verify important information."
-    )
 
     # Store and display the current prompt.
     st.session_state.messages.append({"role": "user", "content": prompt})
