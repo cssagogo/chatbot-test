@@ -2,7 +2,10 @@ import streamlit as st
 from openai import OpenAI
 
 # Set page config
-st.set_page_config(page_title="SpotGPT | iSpot.tv")
+st.set_page_config(
+    page_title="SpotGPT | iSpot.tv",
+    initial_sidebar_state="collapsed"
+)
 
 # Add logos
 st.logo(image="images/ispot-logo.png", 
@@ -10,6 +13,11 @@ st.logo(image="images/ispot-logo.png",
 
 # Inject CSS
 st.markdown('<style>' + open('styles.css').read() + '</style>', unsafe_allow_html=True)
+
+# Build sidebard
+with st.sidebar:
+    st.header("⚙️ Settings")
+
 
 # Show opening question
 if "messages" not in st.session_state:
