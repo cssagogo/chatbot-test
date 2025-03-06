@@ -63,8 +63,8 @@ body {
 
 
 
-
+   [data-testid="manage-app-button"],
    [data-testid="manage-app-button"],
    [data-testid="stHeader"] {
-    display: none;
+    display: none !important;
    }
